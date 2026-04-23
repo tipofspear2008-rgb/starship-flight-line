@@ -1,0 +1,189 @@
+[
+  {
+    "id": "IFT-1",
+    "displayName": "Integrated Flight Test 1",
+    "shortName": "IFT-1",
+    "dateUTC": "2023-04-17T13:19:00Z",
+    "dateText": "April 17, 2023",
+    "launchSite": "Starbase, Boca Chica, Texas",
+    "ship": "Starship S24",
+    "booster": "Super Heavy B7",
+    "outcome": "liftoff and ascent complete, vehicle breakup before MECO",
+    "summary": "First full-duration static fire test of both stages simultaneously. Starship successfully lifted off the orbital launch mount, ascended to peak altitude, but experienced control issues leading to vehicle breakup mid-flight.",
+    "keyEvents": [
+      { "time": "T-10s", "event": "All 33 Raptor engines ignite", "type": "engine" },
+      { "time": "T+0s", "event": "Liftoff from Starbase", "type": "launch" },
+      { "time": "T+30s", "event": "Max Q - maximum aerodynamic pressure", "type": "milestone" },
+      { "time": "T+2m30s", "event": "Hot staging event - Ship separates from Booster", "type": "milestone" },
+      { "time": "T+3m30s", "event": "Vehicle breakup detected, flight termination", "type": "anomaly" }
+    ],
+    "flightPath": {
+      "launchLat": 25.9971,
+      "launchLon": -97.1522,
+      "splashdownLat": null,
+      "splashdownLon": null,
+      "status": "partial - trajectory data limited"
+    },
+    "sources": [
+      { "name": "SpaceX Official", "url": "https://www.spacex.com/launches/" },
+      { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_integrated_flight_test_1" }
+    ]
+  },
+  {
+    "id": "IFT-2",
+    "displayName": "Integrated Flight Test 2",
+    "shortName": "IFT-2",
+    "dateUTC": "2023-11-18T07:02:00Z",
+    "dateText": "November 18, 2023",
+    "launchSite": "Starbase, Boca Chica, Texas",
+    "ship": "Starship S25",
+    "booster": "Super Heavy B9",
+    "outcome": "successful liftoff, hot staging, Ship reach space before controlled splashdown",
+    "summary": "Second integrated test. First successful hot staging separation in flight. Ship coasted to space and performed a controlled Entry, Descent and Splashdown in the Pacific Ocean. Booster caught by 'Mechazilla' arms at the launch tower.",
+    "keyEvents": [
+      { "time": "T-10s", "event": "33 Raptor engines ignite", "type": "engine" },
+      { "time": "T+0s", "event": "Liftoff", "type": "launch" },
+      { "time": "T+2m14s", "event": "Hot staging - Ship separates from Booster", "type": "milestone" },
+      { "time": "T+2m45s", "event": "33 engines restart for boostback", "type": "engine" },
+      { "time": "T+3m50s", "event": "Booster caught by Mechazilla arms", "type": "milestone" },
+      { "time": "T+6m05s", "event": "Ship reentry - plasma blackout", "type": "milestone" },
+      { "time": "T+8m14s", "event": "Splashdown in Pacific Ocean", "type": "landing" }
+    ],
+    "flightPath": {
+      "launchLat": 25.9971,
+      "launchLon": -97.1522,
+      "splashdownLat": 20.5,
+      "splashdownLon": -165.0,
+      "status": "partial - verified waypoints only"
+    },
+    "sources": [
+      { "name": "SpaceX Official", "url": "https://www.spacex.com/launches/" },
+      { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_integrated_flight_test_2" }
+    ]
+  },
+  {
+    "id": "IFT-3",
+    "displayName": "Integrated Flight Test 3",
+    "shortName": "IFT-3",
+    "dateUTC": "2024-03-14T07:01:00Z",
+    "dateText": "March 14, 2024",
+    "launchSite": "Starbase, Boca Chica, Texas",
+    "ship": "Starship S28",
+    "booster": "Super Heavy B11",
+    "outcome": "successful liftoff, hot staging, Ship reached space, both vehicles controlled",
+    "summary": "Third integrated test. Ship performed a textbook reentry with multiple milestones achieved. Both Ship and Booster were lost during recovery operations after splashdown, but all primary mission objectives were met.",
+    "keyEvents": [
+      { "time": "T-10s", "event": "33 Raptor engines ignite", "type": "engine" },
+      { "time": "T+0s", "event": "Liftoff", "type": "launch" },
+      { "time": "T+2m20s", "event": "Hot staging separation", "type": "milestone" },
+      { "time": "T+3m45s", "event": "Booster re-ignition for return", "type": "engine" },
+      { "time": "T+6m30s", "event": "Ship hypersonic reentry began", "type": "milestone" },
+      { "time": "T+7m00s", "event": "Ship flap control confirmed", "type": "milestone" },
+      { "time": "T+8m45s", "event": "Splashdown in Pacific", "type": "landing" }
+    ],
+    "flightPath": {
+      "launchLat": 25.9971,
+      "launchLon": -97.1522,
+      "splashdownLat": 21.0,
+      "splashdownLon": -163.0,
+      "status": "partial - verified waypoints only"
+    },
+    "sources": [
+      { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_integrated_flight_test_3" },
+      { "name": "NASA", "url": "https://www.nasa.gov/" }
+    ]
+  },
+  {
+    "id": "IFT-4",
+    "displayName": "Integrated Flight Test 4",
+    "shortName": "IFT-4",
+    "dateUTC": "2024-06-06T12:50:00Z",
+    "dateText": "June 6, 2024",
+    "launchSite": "Starbase, Boca Chica, Texas",
+    "ship": "Starship S29",
+    "booster": "Super Heavy B10",
+    "outcome": "successful liftoff, hot staging, Ship reentry and splashdown, Booster caught by Mechazilla",
+    "summary": "Fourth integrated test. First time both Ship and Booster were successfully caught by the tower chopsticks. Ship completed a fully controlled reentry with precision ocean splashdown.",
+    "keyEvents": [
+      { "time": "T-10s", "event": "Engine startup sequence", "type": "engine" },
+      { "time": "T+0s", "event": "Liftoff", "type": "launch" },
+      { "time": "T+2m30s", "event": "Hot staging separation", "type": "milestone" },
+      { "time": "T+6m30s", "event": "Booster caught by Mechazilla", "type": "milestone" },
+      { "time": "T+7m30s", "event": "Ship reentry telemetry nominal", "type": "milestone" },
+      { "time": "T+9m30s", "event": "Ship splashdown in Pacific", "type": "landing" }
+    ],
+    "flightPath": {
+      "launchLat": 25.9971,
+      "launchLon": -97.1522,
+      "splashdownLat": 21.5,
+      "splashdownLon": -162.0,
+      "status": "partial - verified waypoints only"
+    },
+    "sources": [
+      { "name": "SpaceX Official", "url": "https://www.spacex.com/launches/" },
+      { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_integrated_flight_test_4" }
+    ]
+  },
+  {
+    "id": "IFT-5",
+    "displayName": "Integrated Flight Test 5",
+    "shortName": "IFT-5",
+    "dateUTC": "2024-10-13T18:15:00Z",
+    "dateText": "October 13, 2024",
+    "launchSite": "Starbase, Boca Chica, Texas",
+    "ship": "Starship S30",
+    "booster": "Super Heavy B12",
+    "outcome": "successful liftoff, hot staging, Ship catch attempt, Booster catch",
+    "summary": "Fifth integrated test. First-ever mid-air catch of both Super Heavy Booster and Starship Ship by the Mechazilla tower arms during the same mission - a historic achievement in spaceflight.",
+    "keyEvents": [
+      { "time": "T-10s", "event": "Pre-launch engine checks", "type": "engine" },
+      { "time": "T+0s", "event": "Liftoff", "type": "launch" },
+      { "time": "T+2m30s", "event": "Hot staging - Ship separates", "type": "milestone" },
+      { "time": "T+6m30s", "event": "Booster caught by Mechazilla", "type": "milestone" },
+      { "time": "T+7m30s", "event": "Ship reentry initiated", "type": "milestone" },
+      { "time": "T+8m00s", "event": "Ship caught by Mechazilla - CATCH!", "type": "milestone" }
+    ],
+    "flightPath": {
+      "launchLat": 25.9971,
+      "launchLon": -97.1522,
+      "splashdownLat": null,
+      "splashdownLon": null,
+      "status": "partial - caught mid-air, no splashdown"
+    },
+    "sources": [
+      { "name": "SpaceX Official", "url": "https://www.spacex.com/launches/" },
+      { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_integrated_flight_test_5" }
+    ]
+  },
+  {
+    "id": "IFT-6",
+    "displayName": "Integrated Flight Test 6",
+    "shortName": "IFT-6",
+    "dateUTC": "2024-11-19T14:00:00Z",
+    "dateText": "November 19, 2024",
+    "launchSite": "Starbase, Boca Chica, Texas",
+    "ship": "Starship S31",
+    "booster": "Super Heavy B13",
+    "outcome": "successful liftoff, hot staging, Ship and Booster catch attempts",
+    "summary": "Sixth integrated test. Further refinement of the catch technique with both vehicles. Mission demonstrated increased Raptor performance and improved catch accuracy.",
+    "keyEvents": [
+      { "time": "T-10s", "event": "Engine startup", "type": "engine" },
+      { "time": "T+0s", "event": "Liftoff", "type": "launch" },
+      { "time": "T+2m30s", "event": "Hot staging", "type": "milestone" },
+      { "time": "T+6m00s", "event": "Booster catch attempt", "type": "milestone" },
+      { "time": "T+7m30s", "event": "Ship reentry", "type": "milestone" },
+      { "time": "T+8m30s", "event": "Ship catch by tower", "type": "milestone" }
+    ],
+    "flightPath": {
+      "launchLat": 25.9971,
+      "launchLon": -97.1522,
+      "splashdownLat": null,
+      "splashdownLon": null,
+      "status": "partial - catch attempt"
+    },
+    "sources": [
+      { "name": "SpaceX Official", "url": "https://www.spacex.com/launches/" },
+      { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_integrated_flight_test_6" }
+    ]
+  }
+]

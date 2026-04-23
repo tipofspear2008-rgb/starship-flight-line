@@ -1,0 +1,261 @@
+{
+  "components": [
+    {
+      "id": "ship",
+      "name": "Starship Ship",
+      "shortName": "SHIP",
+      "category": "upper-stage",
+      "role": "The orbital spacecraft stage of the Starship system. Carries payloads to orbit and beyond Earth's atmosphere.",
+      "keyFacts": [
+        { "label": "Height", "value": "~121m (with Booster)" },
+        { "label": "Dry Mass", "value": "~120 tonnes" },
+        { "label": "Payload Capacity", "value": "100-150 tonnes to LEO" },
+        { "label": "Propellant", "value": "Liquid Methane / LOX" },
+        { "label": "Engines", "value": "6x Raptor (vacuum)" }
+      ],
+      "whyItMatters": "Starship Ship is the world's most powerful upper stage ever built. It's fully reusable, refuelable, and designed to carry humans and cargo to the Moon, Mars, and beyond.",
+      "status": "Operational - In active testing phase",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" },
+        { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SpaceX_Starship" }
+      ]
+    },
+    {
+      "id": "ship-nosecone",
+      "name": "Nosecone / Payload Fairing",
+      "shortName": "NOSE",
+      "category": "ship",
+      "role": "The forward section of Starship that houses payloads and provides aerodynamic entry for return through atmosphere.",
+      "keyFacts": [
+        { "label": "Height", "value": "~20m" },
+        { "label": "Volume", "value": "~1,100 m³" },
+        { "label": "Payload Diameter", "value": "8.1m usable" },
+        { "label": "Feature", "value": "Integrated payload deployment" }
+      ],
+      "whyItMatters": "The nosecone doubles as the payload bay door. It's designed to open in orbit to deploy satellites and close again for return. No payload fairing jettisoned = fully reusable.",
+      "status": "Operational",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "ship-heatshield",
+      "name": "Thermal Protection System",
+      "shortName": "TPS",
+      "category": "ship",
+      "role": "Hexagonal heat shield tiles protecting the ship from reentry temperatures up to 1,500°C.",
+      "keyFacts": [
+        { "label": "Tile Type", "value": "Hexagonal silica tiles" },
+        { "label": "Max Temp", "value": "1,500°C (entry)" },
+        { "label": "Tile Count", "value": "~18,000 tiles" },
+        { "label": "Ablative", "value": "Felt backing layer" }
+      ],
+      "whyItMatters": "Starship must survive reentry from orbital velocity (~7.8 km/s). The TPS is the difference between survival and burning up. First time a vehicle this large uses thermal tiles for reentry.",
+      "status": "In development - tile adhesion improvements ongoing",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" },
+        { "name": "NASA", "url": "https://www.nasa.gov/" }
+      ]
+    },
+    {
+      "id": "ship-flap-forward",
+      "name": "Forward Aerodynamic Flaps (Grippers)",
+      "shortName": "FWD FLAPS",
+      "category": "ship",
+      "role": "Four hypersonic flap surfaces for aerodynamic control during reentry and descent.",
+      "keyFacts": [
+        { "label": "Count", "value": "2 forward, 2 aft" },
+        { "label": "Material", "value": "Carbon fiber composite" },
+        { "label": "Control", "value": "Independent servo actuators" },
+        { "label": "Gripper", "value": "Yes - for tower catch" }
+      ],
+      "whyItMatters": "These flaps are critical for controlled aerodynamic descent. The forward flaps also serve as 'gripper' interfaces for the Mechazilla tower catch mechanism.",
+      "status": "Operational",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "ship-engine-section",
+      "name": "Ship Engine Section",
+      "shortName": "SHIP ENG",
+      "category": "ship",
+      "role": "Houses the vacuum-optimized Raptor engines and associated propellant feed systems.",
+      "keyFacts": [
+        { "label": "Engines", "value": "6x Raptor Vacuum" },
+        { "label": "Sea Level Eq.", "value": "Zero (vacuum only)" },
+        { "label": "Thrust (vac)", "value": "~2,300 kN total" },
+        { "label": "Isp (vac)", "value": "380 seconds" }
+      ],
+      "whyItMatters": "Vacuum engines have much larger nozzles optimized for performance above ~10km altitude. Ship uses these exclusively since it fires in vacuum only during nominal flight.",
+      "status": "Operational",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "raptor-vac",
+      "name": "Raptor Engine (Vacuum)",
+      "shortName": "R-VAC",
+      "category": "engine",
+      "role": "Optimized for thrust in vacuum. Fixed geometry, non-throttling.",
+      "keyFacts": [
+        { "label": "Thrust", "value": "~380 kN (vacuum)" },
+        { "label": "Isp", "value": "380 seconds" },
+        { "label": "Propellants", "value": "CH4 / LOX" },
+        { "label": "Ox/Fuel Ratio", "value": "3.55" }
+      ],
+      "whyItMatters": "The Raptor is a full-flow staged combustion engine - the most efficient and sophisticated rocket engine ever built. The vacuum variant maximizes specific impulse for orbital operations.",
+      "status": "Operational - In production",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" },
+        { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Raptor_(rocket_engine)" }
+      ]
+    },
+    {
+      "id": "booster",
+      "name": "Super Heavy Booster",
+      "shortName": "BOOSTER",
+      "category": "booster",
+      "role": "The first stage booster. Provides most of the ascent thrust to get Starship to space.",
+      "keyFacts": [
+        { "label": "Height", "value": "~70m" },
+        { "label": "Diameter", "value": "9m" },
+        { "label": "Dry Mass", "value": "~200 tonnes" },
+        { "label": "Thrust", "value": "~7,590 kN (33 Raptors)" },
+        { "label": "Propellant", "value": "Liquid Methane / LOX" }
+      ],
+      "whyItMatters": "The largest and most powerful rocket stage ever built. 33 Raptor engines produce more thrust than the Saturn V. It's designed to be caught by the launch tower for rapid reuse.",
+      "status": "Operational - Catch technique proven",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "booster-gridfin",
+      "name": "Grid Fins",
+      "shortName": "GRID FINS",
+      "category": "booster",
+      "role": "Aerobic control surfaces for booster during descent. Provide roll control and steering.",
+      "keyFacts": [
+        { "label": "Count", "value": "4 (2 per side)" },
+        { "label": "Material", "value": "Carbon fiber / titanium" },
+        { "label": "Fold", "value": "Stowed during flight" },
+        { "label": "Deploy", "value": "~80km altitude" }
+      ],
+      "whyItMatters": "Grid fins provide aerodynamic stability during boostback burns and descent. They fold flush against the booster during ascent to minimize drag.",
+      "status": "Operational",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "booster-engine-section",
+      "name": "Booster Engine Section",
+      "shortName": "BOOST ENG",
+      "category": "booster",
+      "role": "The bottom section housing 33 sea-level Raptor engines arranged in a complex pattern.",
+      "keyFacts": [
+        { "label": "Engines", "value": "33x Raptor (sea level)" },
+        { "label": "Thrust", "value": "~7,590 kN total" },
+        { "label": "Ignition", "value": "Sequential start sequence" },
+        { "label": "Pattern", "value": "Central + 2 rings" }
+      ],
+      "whyItMatters": "33 engines in a precise pattern controlled by the flight computer. Can tolerate multiple engine failures and still complete the mission. This is the most powerful rocket stage ever.",
+      "status": "Operational",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "raptor-sl",
+      "name": "Raptor Engine (Sea Level)",
+      "shortName": "R-SL",
+      "category": "engine",
+      "role": "Optimized for operation at sea level. Gimballing for thrust vector control.",
+      "keyFacts": [
+        { "label": "Thrust", "value": "~230 kN (SL)" },
+        { "label": "Isp", "value": "327 seconds" },
+        { "label": "Gimbal", "value": "±15° (thrust vector)" },
+        { "label": "Throttling", "value": "40% to 100%" }
+      ],
+      "whyItMatters": "Sea level Raptors must operate in the thick atmosphere and provide thrust vector control. The throttling capability allows thrust modulation for max-Q and landing.",
+      "status": "Operational - In production",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" },
+        { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Raptor_(rocket_engine)" }
+      ]
+    },
+    {
+      "id": "hotstage",
+      "name": "Hot Staging Ring",
+      "shortName": "HOT STAGE",
+      "category": "stage",
+      "role": "Enables 'hot separation' where Ship engines ignite before booster separation for cleaner stage separation.",
+      "keyFacts": [
+        { "label": "Method", "value": "Hot gas thruster puff" },
+        { "label": "Ship Ignition", "value": "Before physical separation" },
+        { "label": "Benefit", "value": "No aft payload bay intrusion" },
+        { "label": "First Use", "value": "IFT-2" }
+      ],
+      "whyItMatters": "Traditional staging separates then ignites upper stage engines. Hot staging ignites the Ship while still attached, using booster's own tail-chute effect for separation. This saves mass and complexity.",
+      "status": "Operational - Proven technique",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "interstage",
+      "name": "Interstage Adapter",
+      "shortName": "INTERSTAGE",
+      "category": "stage",
+      "role": "Structural connection between Ship and Booster. Houses hot staging components.",
+      "keyFacts": [
+        { "label": "Connection", "value": "Clamp band system" },
+        { "label": "Separation", "value": "Hot staging event" },
+        { "label": "Hardware", "value": "Pneumatic latches" }
+      ],
+      "whyItMatters": "The interstage must survive launch loads and transmit forces between stages. The clamp band design allows for quick connect/disconnect for turnaround.",
+      "status": "Operational",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "launch-tower",
+      "name": "Orbital Launch Mount / Mechazilla",
+      "shortName": "TOWER",
+      "category": "ground",
+      "role": "The launch infrastructure including the 'chopstick' catch arms for booster and ship recovery.",
+      "keyFacts": [
+        { "label": "Height", "value": "~146m" },
+        { "label": "Catch System", "value": "Mechazilla chopsticks" },
+        { "label": " Umbilicals", "value": "Quick disconnect arm" },
+        { "label": "Location", "value": "Starbase, Boca Chica" }
+      ],
+      "whyItMatters": "No legs. No landing pads. Mechazilla catches the booster and ship mid-air and returns them to the launch mount for rapid reuse. This eliminates landing gear and massive ground infrastructure.",
+      "status": "Operational at Starbase",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    },
+    {
+      "id": "mechazilla",
+      "name": "Mechazilla Catch System",
+      "shortName": "CHOPSTICKS",
+      "category": "ground",
+      "role": "The giant arms ('chopsticks') that catch and handle both Super Heavy and Starship.",
+      "keyFacts": [
+        { "label": "Arms", "value": "2 massive hydraulic arms" },
+        { "label": "Catch Zones", "value": "Boosters grip points + Ship flaps" },
+        { "label": "Precision", "value": "~cm level positioning" },
+        { "label": "First Catch", "value": "IFT-4 Booster, IFT-5 both" }
+      ],
+      "whyItMatters": "First time in history a launch tower catches the booster and ship. This enables faster turnaround than any existing landing system and eliminates all ground touchdown systems.",
+      "status": "Operational - Catch technique maturing",
+      "sources": [
+        { "name": "SpaceX", "url": "https://www.spacex.com/starship" }
+      ]
+    }
+  ]
+}
