@@ -82,14 +82,10 @@ function FlightPath({ mission }: { mission: Mission }) {
     points.push(new THREE.Vector3(x, y, z))
   }
   
+  const geometry = new THREE.BufferGeometry().setFromPoints(points)
+  
   return (
-    <line>
-      <bufferGeometry>
-        <bufferAttribute
-          attachRawObject='attributes'
-          args={[new Float32Array(points.flatMap(p => [p.x, p.y, p.z])), 3]}
-        />
-      </bufferGeometry>
+    <line geometry={geometry}>
       <lineBasicMaterial color={0xffffff} transparent opacity={0.6} />
     </line>
   )
@@ -104,7 +100,7 @@ function GlobeScene({ selectedMission }: { selectedMission: Mission | null }) {
       
       <EarthGlobe />
       
-      {selectedMission && selectedMission.flightPath.launchLat && (
+      {selectedMission && selectedMission.flightPath.launchLat && selectedMission.flightPath.launchLon && (
         <>
           <LaunchMarker 
             lat={selectedMission.flightPath.launchLat} 
@@ -112,7 +108,7 @@ function GlobeScene({ selectedMission }: { selectedMission: Mission | null }) {
           />
           <FlightPath mission={selectedMission} />
           
-          {selectedMission.flightPath.splashdownLat && (
+          {selectedMission.flightPath.splashdownLat && selectedMission.flightPath.splashdownLon && (
             <mesh 
               position={[
                 -20 * Math.cos((selectedMission.flightPath.splashdownLat * Math.PI) / 180) * Math.cos((selectedMission.flightPath.splashdownLon * Math.PI) / 180),
