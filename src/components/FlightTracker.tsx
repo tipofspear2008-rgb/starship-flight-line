@@ -83,12 +83,9 @@ function FlightPath({ mission }: { mission: Mission }) {
   }
   
   const geometry = new THREE.BufferGeometry().setFromPoints(points)
+  const line = new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.6 }))
   
-  return (
-    <line geometry={geometry}>
-      <lineBasicMaterial color={0xffffff} transparent opacity={0.6} />
-    </line>
-  )
+  return <primitive object={line} />
 }
 
 // Globe scene
